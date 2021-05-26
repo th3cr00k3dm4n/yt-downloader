@@ -6,7 +6,7 @@ run_setup()
 {
  sleep 2 ;
  cd $HOME 
- echo "+++ Settings up directory +++" && mkdir /sdcard/Download/yt-downloader && mkdir /sdcard/Download/yt-downloader/video && mkdir /sdcard/Download/yt-downloader/audio 
+ echo "+++ Settings up directory +++" && mkdir /sdcard/Download/yt-downloader && mkdir /sdcard/Download/yt-downloader/video && mkdir /sdcard/Download/yt-downloader/audio || run_install 
  }
  run_install()
  {
