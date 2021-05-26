@@ -11,7 +11,7 @@ run_setup()
  run_install()
  {
 clear && echo " +++ installing dependency +++" && sleep 2
- pkg install ffmpeg -y && pkg install python3 -y && pkg install python2 -y && pip3 install youtube-dl || run_install
+ apt update && apt upgrade && pkg install ffmpeg -y && pkg install python3 -y && pkg install python2 -y && pip3 install youtube-dl || run_install
   }
 cd $HOME
 ls /sdcard || termux-setup-storage && sleep 3 && run_setup && run_install && clear && cd $HOME/yt-downloader && ./ytd.sh || echo "something went wrong please try again ×︵×"
