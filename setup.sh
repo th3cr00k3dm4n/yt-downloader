@@ -1,4 +1,5 @@
 #!/bin/bash
+#codded by : th3cr00k3dm4n
 #setup
 #install
 
@@ -19,4 +20,4 @@ pkg install python2 python3 ffmpeg -y && pip install youtube-dl  && echo "[+] fi
 echo "[*] Updating "
 apt update && apt upgrade
 cd $HOME
-run_setup && run_install && clear && echo "[✓] installation finished please run "ytd.sh"" || echo "something went wrong please try again ×︵×"
+run_setup && run_install && clear && echo "[✓] installation finished please run ytd.sh" || echo "something went wrong please try again ×︵×"
