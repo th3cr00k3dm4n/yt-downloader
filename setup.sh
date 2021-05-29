@@ -6,14 +6,14 @@
 run_setup()
 {
 sleep 2 ;
-ls /sdcard >/dev/null 2>&1 || termux-setup-storage && echo "[%] Settings up directory" && sleep 8 && mkdir -p /sdcard/Download/yt-downloader/{video,audio} && run_install 
+ls /sdcard >/dev/null 2>&1 || termux-setup-storage && echo "[%] Settings up directory" && sleep 7 && mkdir -p /sdcard/Download/yt-downloader/{video,audio} && run_install 
 }
 
 
 run_install()
 {
-echo " +++ installing dependency +++" &&
-pkg install python2 ffmpeg -y && pip2 install youtube-dl  && echo "[+] finished installation"  || echo "[*] failed to install "  && run_install
+echo " +++| installing dependency |+++" &&
+pkg install python2 ffmpeg -y && pip2 install youtube-dl  && echo "[✓] finished installation"  || echo "[*] failed to install "  
 }
 
 
