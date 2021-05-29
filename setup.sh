@@ -12,8 +12,8 @@ ls /sdcard >/dev/null 2>&1 || termux-setup-storage && echo "[%] Settings up dire
 
 run_install()
 {
-clear && echo " +++ installing dependency +++" &&
-pkg install python2 python3 ffmpeg -y && pip install youtube-dl  && echo "[+] finished installation"  || echo "[*] failed to install "  && run_install
+echo " +++ installing dependency +++" &&
+pkg install python2 ffmpeg -y && pip2 install youtube-dl  && echo "[+] finished installation"  || echo "[*] failed to install "  && run_install
 }
 
 
