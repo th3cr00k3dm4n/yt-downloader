@@ -39,21 +39,21 @@ run_video()
 {
     clear
     banner
-    read -p "Enter url : " url
+    read -p "╚══[ Enter url : " url
     youtube-dl -F $url | awk '{print $1" | " $2 " | " $3}'
     echo ""
     echo "Select a format by choosing the fomat code "
     echo " *format code is the first set of numbers"
     read -p "Enter the number : " frmt
-    youtube-dl -f $frmt  -o "/sdcard/yt-downloader/video/%(title)s.%(ext)s"  $url && clear && echo "+++ Download complete +++ " && echo "file stored in download folder " && run_menu || echo " ×︵× failed to download "  && run_menu
+    youtube-dl -f $frmt  -o "/sdcard/Download/yt-downloader/video/%(title)s.%(ext)s"  $url && clear && echo "+++ Download complete +++ " && echo "file stored in download folder " && run_menu || echo " ×︵× failed to download "  && run_menu
 }
 
 run_audio()
 {
     clear
     banner
-    read -p "Enter url : " url
-    youtube-dl   -o "/sdcard/yt-downloader/audio/%(title)s.%(ext)s" --extract-audio --audio-format mp3 $url && clear && echo "+++ Download complete +++ " && echo "file stored in download folder " && run_menu || echo " ×︵× failed to download " && run_menu
+    read -p "╚══[ Enter url : " url
+    youtube-dl   -o "/sdcard/Download/yt-downloader/audio/%(title)s.%(ext)s" --extract-audio --audio-format mp3 $url && clear && echo "+++ Download complete +++ " && echo "file stored in download folder " && run_menu || echo " ×︵× failed to download " && run_menu
 }
 
 banner()
