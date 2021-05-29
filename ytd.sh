@@ -40,10 +40,11 @@ run_video()
     clear
     banner
     read -p "╚══[ Enter url : " url
-    youtube-dl -F $url | awk '{print $1" | " $2 " | " $3}'
+    youtube-dl -F $url | awk '{print $1" | " $2 " | " $3" | "$12" "$13}'
     echo ""
     echo "Select a format by choosing the fomat code "
     echo " *format code is the first set of numbers"
+    echo "Some format may only have video only the last two options have both audio & video'
     read -p "Enter the number : " frmt
     youtube-dl -f $frmt  -o "/sdcard/Download/yt-downloader/video/%(title)s.%(ext)s"  $url && clear && echo "+++ Download complete +++ " && echo "file stored in download folder " && run_menu || echo " ×︵× failed to download "  && run_menu
 }
