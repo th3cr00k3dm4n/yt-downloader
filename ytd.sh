@@ -74,6 +74,6 @@ run_check()
 dpkg -s python2  >/dev/null 2>&1 && pip2 show youtube-dl >/dev/null 2>&1 && run_menu || echo "[×] Some packages aren't installed please run setup.sh" 
 }
 clear
-run_check && sleep 3 && run_menu || echo "something went wrong.Make sure you have run setup.sh or check your internet connection " && echo "please report any bugs or issues on GitHub"
+run_check  || echo "something went wrong.Make sure you have run setup.sh or check your internet connection " && echo "please report any bugs or issues on GitHub"
 
 
