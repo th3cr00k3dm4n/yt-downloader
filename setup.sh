@@ -6,7 +6,7 @@
 run_setup()
 {
 sleep 2 ;
-ls /sdcard >/dev/null 2>&1 || echo "[%] Settings up directory" && termux-setup-storage && sleep 7 && run_install 
+ls $EXTERNAL_STORAGE/ >/dev/null 2>&1 || echo "[%] Settings up" && termux-setup-storage && sleep 7 && run_install 
 }
 
 
