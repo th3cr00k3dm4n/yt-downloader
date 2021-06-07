@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/MADE%20IN-INDIA-blue" > <img src="https://img.shields.io/badge/Language-shell-brightgreen">
+
 # yt-downloader
 A simple shell to download youtube video using youtube-dl
 # Installation
