@@ -3,7 +3,7 @@
 # yt-downloader(not maintained)
 A simple shell to download youtube video using youtube-dl
 # Installation
-The whole Installation is give in my website
+The whole Installation is given in my website
 
 http://th3cr00k3dm4n.unaux.com/blog/yt-downloader
 
